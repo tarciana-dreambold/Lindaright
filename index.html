@@ -15,46 +15,56 @@ body{background:#e0e0e0;font-family:Calibri,'Segoe UI',sans-serif;padding:20px;d
 .pills button.active{background:#B22028;color:white;border-color:#B22028}
 .slide{width:960px;height:540px;background:white;position:relative;box-shadow:0 4px 20px rgba(0,0,0,0.15);overflow:hidden;display:none;flex-shrink:0}
 .slide.visible{display:block}
-.chrome-bar{position:absolute;left:3px;top:22px;width:5px;height:52px;background:#D9D9D9}
-.chrome-line{position:absolute;bottom:44px;left:36px;right:36px;height:1px;background:#D9D9D9}
-.chrome-conf{position:absolute;bottom:16px;left:36px;font-size:7.5px;font-weight:700;color:#B22028;letter-spacing:1.5px}
-.chrome-pg{position:absolute;bottom:16px;right:40px;font-size:8px;color:#BCBCBC}
-.chrome-src{position:absolute;bottom:50px;left:36px;right:50px;font-size:7px;color:#BCBCBC;font-style:italic}
-.s-title{padding:22px 50px 0 62px;font-family:'Century Gothic','Gill Sans',sans-serif;font-size:17px;color:#767171;line-height:1.25}
-.s-body{padding:0 50px 0 62px}
+/* Chrome */
+.cb{position:absolute;left:3px;top:22px;width:5px;height:52px;background:#D9D9D9}
+.cl{position:absolute;bottom:44px;left:36px;right:36px;height:1px;background:#D9D9D9}
+.cc{position:absolute;bottom:16px;left:36px;font-size:7.5px;font-weight:700;color:#B22028;letter-spacing:1.5px}
+.cp{position:absolute;bottom:16px;right:40px;font-size:8px;color:#BCBCBC}
+.cs{position:absolute;bottom:50px;left:36px;right:50px;font-size:7px;color:#BCBCBC;font-style:italic}
+.st{padding:22px 50px 0 62px;font-family:'Century Gothic','Gill Sans',sans-serif;font-size:17px;color:#767171;line-height:1.25}
+.sb{padding:0 50px 0 62px}
+/* Tags */
 .tags{display:flex;gap:6px;margin:8px 0 10px}
-.tag{padding:3px 10px;border-radius:3px;font-size:7.5px;font-weight:700;letter-spacing:0.3px;white-space:nowrap}
-.tag-b{color:white}.tag-m{background:#E8E8E8;color:#3F3F3F}
+.tg{padding:3px 10px;border-radius:3px;font-size:7.5px;font-weight:700;letter-spacing:0.3px;white-space:nowrap}
+.tgb{color:white}.tgm{background:#E8E8E8;color:#3F3F3F}
+/* Section header */
 .sh{font-family:'Century Gothic','Gill Sans',sans-serif;font-size:10px;font-weight:700;margin:8px 0 4px}
+/* Body text */
 .bt{font-size:9.5px;color:#767171;line-height:1.4;margin-bottom:4px}
-.bl{margin:4px 0}.bl div{display:flex;align-items:flex-start;gap:6px;margin-bottom:3px}
+/* Bullets */
+.bl div{display:flex;align-items:flex-start;gap:6px;margin-bottom:3px}
 .bl span{font-size:9.5px;color:#767171;line-height:1.4}
+/* Quote */
 .qb{background:#F5F5F5;border-left:3px solid;padding:6px 10px;margin:6px 0}
 .qb p{font-size:9.5px;color:#8C8C8C;font-style:italic;line-height:1.4}
+/* Gap */
 .gap{display:flex;align-items:flex-start;gap:7px;margin:6px 0;border-left:3px solid;padding-left:8px}
-.gap .diamond{width:9px;height:9px;transform:rotate(45deg);flex-shrink:0;margin-top:3px}
+.gap .dm{width:9px;height:9px;transform:rotate(45deg);flex-shrink:0;margin-top:3px}
 .gap .gt{font-size:9px;line-height:1.4;color:#767171}
 .gap .gl{font-family:'Century Gothic',sans-serif;font-weight:700}
+/* Placeholder */
 .ph{background:#F0F4F8;border:1px dashed #BCBCBC;display:flex;align-items:center;justify-content:center;text-align:center;font-size:10px;color:#8C8C8C;font-style:italic;line-height:1.4;padding:12px;white-space:pre-line}
-.two-col{display:flex;gap:16px}
-.col{flex:1}
-.card{background:#FAFAFA;border-left:4px solid;padding:6px 10px;margin-bottom:5px;display:flex;gap:8px;align-items:flex-start}
-.card-num{width:20px;height:20px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:700;color:white;flex-shrink:0}
-.card-t{font-family:'Century Gothic',sans-serif;font-size:9.5px;font-weight:700}
-.card-d{font-size:8.5px;color:#767171;line-height:1.3}
-.row3{display:flex;gap:0;align-items:stretch;margin-bottom:6px}
-.row3 .lf{flex:1;background:#F0F4F8;border-left:3px solid #003366;padding:7px 10px}
-.row3 .ar{display:flex;align-items:center;padding:0 8px;color:#BCBCBC;font-size:16px}
-.row3 .rt{flex:1;background:#FAFAFA;border-left:3px solid #4A7FB5;padding:7px 10px}
-.num-circle{width:18px;height:18px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-size:9px;font-weight:700;color:white;flex-shrink:0}
-.amc-h{padding:5px 10px;font-family:'Century Gothic',sans-serif;font-size:10px;font-weight:700;color:white}
-.amc-b{padding:5px 10px;font-size:9px;color:#767171;line-height:1.35}
-.amc-arr{text-align:center;color:#BCBCBC;font-size:11px;line-height:1}
-.strat-grid{display:grid;grid-template-columns:1fr 1fr;gap:3px 10px;margin-bottom:6px}
-.strat-item{display:flex;align-items:flex-start;gap:5px;padding:2px 0}
-.strat-bar{width:4px;height:26px;flex-shrink:0;border-radius:1px}
-.strat-n{font-family:'Century Gothic',sans-serif;font-size:8px;font-weight:700}
-.strat-d{font-size:7px;color:#767171}
+/* Two col */
+.tc{display:flex;gap:16px}
+/* Cards */
+.cd{background:#FAFAFA;border-left:4px solid;padding:6px 10px;margin-bottom:5px;display:flex;gap:8px;align-items:flex-start}
+.cn{width:20px;height:20px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:9px;font-weight:700;color:white;flex-shrink:0}
+.ct2{font-family:'Century Gothic',sans-serif;font-size:9.5px;font-weight:700}
+.cd2{font-size:8.5px;color:#767171;line-height:1.3}
+/* AMC */
+.ah{padding:5px 10px;font-family:'Century Gothic',sans-serif;font-size:10px;font-weight:700;color:white}
+.ab{padding:5px 10px;font-size:9px;color:#767171;line-height:1.35}
+.aa{text-align:center;color:#BCBCBC;font-size:11px;line-height:1}
+/* Strategy types */
+.sg{display:grid;grid-template-columns:1fr 1fr;gap:3px 10px;margin-bottom:6px}
+.si{display:flex;align-items:flex-start;gap:5px;padding:2px 0}
+.sbr{width:4px;height:26px;flex-shrink:0;border-radius:1px}
+.sn{font-family:'Century Gothic',sans-serif;font-size:8px;font-weight:700}
+.sd{font-size:7px;color:#767171}
+/* Numbered circles */
+.nc{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Century Gothic',sans-serif;font-size:18px;font-weight:700;color:white;flex-shrink:0}
+/* RBV annotation */
+.rbv-note{font-size:7.5px;color:#4A7FB5;font-style:italic;margin-top:2px;padding-left:2px}
 </style>
 </head>
 <body>
@@ -64,127 +74,158 @@ body{background:#e0e0e0;font-family:Calibri,'Segoe UI',sans-serif;padding:20px;d
   <span id="counter">Slide 1 / 10</span>
   <button onclick="go(1)" id="next">Next →</button>
 </div>
-
 <div class="pills" id="pills"></div>
 
-<!-- SLIDE 1: S2 RBV -->
+<!-- ═══════ SLIDE 1: S2 RBV ═══════ -->
 <div class="slide" id="s0">
-  <div class="chrome-bar"></div><div class="chrome-line"></div>
-  <div class="chrome-conf">CONFIDENTIAL</div><div class="chrome-pg">2</div>
-  <div class="chrome-src">Source: Verona & Ravasi, 2003; Ghoshal & Westney, 1991; Chen et al., 2021; Strategic intent contribution: Caricio Carlucci</div>
-  <div class="s-title">Three knowledge-based capabilities underpin the CI function — and connect to the resource-based view</div>
-  <div class="s-body">
-    <div class="tags"><span class="tag tag-b" style="background:#003366">RESOURCE-BASED VIEW</span><span class="tag tag-m">VERONA & RAVASI (2003) + RBV ENRICHMENT</span></div>
-    <div style="background:#003366;padding:8px 14px;display:inline-block;margin-bottom:6px"><span style="font-family:'Century Gothic',sans-serif;font-size:11px;font-weight:700;color:white;letter-spacing:0.5px">STRATEGIC INTENT</span></div>
-    <p class="bt" style="font-size:9px;margin-bottom:10px">Dynamic capabilities require direction. Strategic intent — the organization's goals, competitive aspirations, and working assumptions — defines what knowledge to seek, how to interpret it, and when to act.</p>
-    <div class="row3"><div class="lf"><div style="display:flex;align-items:center;gap:6px;margin-bottom:2px"><div class="num-circle" style="background:#003366">1</div><span style="font-family:'Century Gothic',sans-serif;font-size:9.5px;font-weight:700;color:#003366">Knowledge Creation & Absorption</span></div><span style="font-size:8px;color:#767171">How external knowledge is generated, acquired, and brought into the organization</span></div><div class="ar">→</div><div class="rt"><div style="font-family:'Century Gothic',sans-serif;font-size:9.5px;font-weight:700;color:#4A7FB5;margin-bottom:2px">Resource Picking <span style="font-size:7px;font-weight:400;color:#BCBCBC">(Barney, 1991; Makadok, 2001)</span></div><span style="font-size:8px;color:#767171">Identifying which external intelligence to acquire. AI expands the scanning aperture — more sources, broader geographies, continuous monitoring.</span></div></div>
-    <div class="row3"><div class="lf"><div style="display:flex;align-items:center;gap:6px;margin-bottom:2px"><div class="num-circle" style="background:#003366">2</div><span style="font-family:'Century Gothic',sans-serif;font-size:9.5px;font-weight:700;color:#003366">Knowledge Integration</span></div><span style="font-size:8px;color:#767171">How dispersed knowledge gets combined into coherent, actionable intelligence</span></div><div class="ar">→</div><div class="rt"><div style="font-family:'Century Gothic',sans-serif;font-size:9.5px;font-weight:700;color:#4A7FB5;margin-bottom:2px">Resource Bundling <span style="font-size:7px;font-weight:400;color:#BCBCBC">(Sirmon et al., 2007)</span></div><span style="font-size:8px;color:#767171">Combining dispersed knowledge into actionable intelligence. Ghoshal's three clusters (data management, analysis, implication) operationalize this.</span></div></div>
-    <div class="row3"><div class="lf"><div style="display:flex;align-items:center;gap:6px;margin-bottom:2px"><div class="num-circle" style="background:#003366">3</div><span style="font-family:'Century Gothic',sans-serif;font-size:9.5px;font-weight:700;color:#003366">Knowledge Reconfiguration</span></div><span style="font-size:8px;color:#767171">How the organization adapts its CI practices and strategic responses over time</span></div><div class="ar">→</div><div class="rt"><div style="font-family:'Century Gothic',sans-serif;font-size:9.5px;font-weight:700;color:#4A7FB5;margin-bottom:2px">Capability Building <span style="font-size:7px;font-weight:400;color:#BCBCBC">(Teece et al., 1997)</span></div><span style="font-size:8px;color:#767171">Adapting CI practices = building dynamic capabilities. Firms with superior knowledge resources achieve sustainable competitive advantage.</span></div></div>
-    <p style="font-size:8px;color:#8C8C8C;text-align:center;margin-top:8px;font-style:italic;line-height:1.4">These capabilities operate as continuous knowledge dynamics. RBV explains why firms with superior knowledge resources achieve advantage — but not how they deploy those resources competitively (→ CD)</p>
+  <div class="cb"></div><div class="cl"></div><div class="cc">CONFIDENTIAL</div><div class="cp">2</div>
+  <div class="cs">Source: Verona & Ravasi, 2003; Ghoshal & Westney, 1991; Chen et al., 2021; Strategic intent contribution: Caricio Carlucci</div>
+  <div class="st">Three knowledge-based capabilities underpin the CI function — and connect to the resource-based view</div>
+  <div class="sb" style="margin-top:2px">
+    <div style="font-size:12px;color:#BCBCBC;margin-bottom:8px">Verona & Ravasi (2003) — with strategic intent as the human-defined antecedent</div>
+    
+    <!-- Strategic Intent label + description — matching original layout -->
+    <div style="display:flex;gap:16px;align-items:flex-start">
+      <div style="flex:1">
+        <div style="background:#003366;padding:6px 16px;display:inline-block;margin-bottom:6px">
+          <span style="font-family:'Century Gothic',sans-serif;font-size:9px;font-weight:700;color:white;letter-spacing:0.5px">STRATEGIC INTENT</span>
+        </div>
+        <p style="font-size:11px;color:#767171;line-height:1.5;margin-bottom:0">
+          Dynamic capabilities require direction. Strategic intent — the organization's goals, competitive aspirations, and working assumptions — defines what knowledge to seek, how to interpret it, and when to act.
+        </p>
+      </div>
+    </div>
+
+    <!-- Three capabilities — large numbered circles, matching original colors -->
+    <div style="display:flex;flex-direction:column;gap:14px;margin-top:16px">
+      <!-- 1: Navy -->
+      <div style="display:flex;gap:14px;align-items:flex-start">
+        <div class="nc" style="background:#003366">1</div>
+        <div style="flex:1">
+          <div style="font-family:'Century Gothic',sans-serif;font-size:14px;font-weight:700;color:#003366">Knowledge Creation & Absorption</div>
+          <div style="font-size:11px;color:#767171;margin-top:2px">How external knowledge is generated, acquired, and brought into the organization</div>
+          <div class="rbv-note">→ RBV: Resource Picking (Barney, 1991) — AI expands the scanning aperture across sources and geographies</div>
+        </div>
+      </div>
+      <!-- 2: Red -->
+      <div style="display:flex;gap:14px;align-items:flex-start">
+        <div class="nc" style="background:#B22028">2</div>
+        <div style="flex:1">
+          <div style="font-family:'Century Gothic',sans-serif;font-size:14px;font-weight:700;color:#B22028">Knowledge Integration</div>
+          <div style="font-size:11px;color:#767171;margin-top:2px">How dispersed knowledge gets combined into coherent, actionable intelligence</div>
+          <div class="rbv-note">→ RBV: Resource Bundling (Sirmon et al., 2007) — Ghoshal's three clusters operationalize this</div>
+        </div>
+      </div>
+      <!-- 3: Dark gray -->
+      <div style="display:flex;gap:14px;align-items:flex-start">
+        <div class="nc" style="background:#3F3F3F">3</div>
+        <div style="flex:1">
+          <div style="font-family:'Century Gothic',sans-serif;font-size:14px;font-weight:700;color:#3F3F3F">Knowledge Reconfiguration</div>
+          <div style="font-size:11px;color:#767171;margin-top:2px">How the organization adapts its CI practices and strategic responses over time</div>
+          <div class="rbv-note">→ RBV: Capability Building (Teece et al., 1997) — adapting CI practices = building dynamic capabilities</div>
+        </div>
+      </div>
+    </div>
+
+    <p style="font-size:10px;color:#767171;line-height:1.5;margin-top:14px">These three capabilities operate throughout the CI process — not as sequential stages, but as continuous knowledge dynamics enabled by organizational resources.</p>
   </div>
 </div>
 
-<!-- SLIDE 2: S8 CD Synthesis -->
+<!-- ═══════ SLIDE 2: S8 CD Synthesis ═══════ -->
 <div class="slide" id="s1">
-  <div class="chrome-bar"></div><div class="chrome-line"></div>
-  <div class="chrome-conf">CONFIDENTIAL</div><div class="chrome-pg">8</div>
-  <div class="chrome-src">Source: Chen, 1996; Gur & Greckhamer, 2019; Tsai et al., 2011; Chen et al., 2021</div>
-  <div class="s-title">Competitive dynamics explains how firms act and react in the marketplace — AMC drives the behavioral side</div>
-  <div class="s-body">
-    <div class="tags"><span class="tag tag-b" style="background:#003366">COMPETITIVE DYNAMICS</span><span class="tag tag-m">LITERATURE SYNTHESIS</span></div>
-    <div class="two-col">
-      <div class="col" style="flex:1.05">
+  <div class="cb"></div><div class="cl"></div><div class="cc">CONFIDENTIAL</div><div class="cp">8</div>
+  <div class="cs">Source: Chen, 1996; Gur & Greckhamer, 2019; Tsai et al., 2011; Chen et al., 2021</div>
+  <div class="st">Competitive dynamics explains how firms act and react in the marketplace — AMC drives the behavioral side</div>
+  <div class="sb">
+    <div class="tags"><span class="tg tgb" style="background:#003366">COMPETITIVE DYNAMICS</span><span class="tg tgm">LITERATURE SYNTHESIS</span></div>
+    <div class="tc">
+      <div style="flex:1.05">
         <div class="sh" style="color:#003366">CD FOUNDATIONS</div>
-        <div class="bl"><div><span>• CD is outward-focused: studying a firm's moves and countermoves (Chen & Miller, 2012)</span></div><div><span>• AMC framework (Chen, 1996): Awareness, Motivation, Capability determine whether firms act</span></div><div><span>• Market commonality + resource similarity = prebattle tension; competitive asymmetry</span></div></div>
-        <div class="sh" style="color:#003366">KEY CONSTRUCTS</div>
-        <div class="card" style="border-color:#003366"><div class="card-num" style="background:#003366">1</div><div><div class="card-t" style="color:#003366">Competitor Identification</div><div class="card-d">Firms develop routines to identify competitors — four perspectives. AI changes these fundamentally.</div><div style="font-size:7px;color:#BCBCBC;font-style:italic;margin-top:2px">Gur & Greckhamer, 2019</div></div></div>
-        <div class="card" style="border-color:#003366"><div class="card-num" style="background:#003366">2</div><div><div class="card-t" style="color:#003366">Competitor Acumen</div><div class="card-d">How accurately a firm comprehends a rival's prioritization. Predicts market share gains.</div><div style="font-size:7px;color:#BCBCBC;font-style:italic;margin-top:2px">Tsai, Su & Chen, 2011</div></div></div>
-        <div class="card" style="border-color:#B22028"><div class="card-num" style="background:#B22028">3</div><div><div class="card-t" style="color:#B22028">Time-Based Competition</div><div class="card-d">Neither CD nor RBV addresses how firms build resources for future markets. CI bridges this.</div><div style="font-size:7px;color:#BCBCBC;font-style:italic;margin-top:2px">Chen, Michel & Lin, 2021</div></div></div>
+        <div class="bl"><div><span>• CD is outward-focused: a firm's moves and countermoves in the marketplace (Chen & Miller, 2012)</span></div><div><span>• AMC framework (Chen, 1996): Awareness, Motivation, Capability determine whether firms act on competitive signals</span></div><div><span>• Market commonality + resource similarity = prebattle tension; competitive asymmetry means rivals don't pose equal threats</span></div></div>
+        <div class="sh" style="color:#003366;margin-top:10px">KEY CONSTRUCTS</div>
+        <div class="cd" style="border-color:#003366"><div class="cn" style="background:#003366">1</div><div><div class="ct2" style="color:#003366">Competitor Identification</div><div class="cd2">Firms develop routines to identify competitors — four perspectives. AI changes these fundamentally.</div><div style="font-size:7px;color:#BCBCBC;font-style:italic;margin-top:2px">Gur & Greckhamer, 2019</div></div></div>
+        <div class="cd" style="border-color:#003366"><div class="cn" style="background:#003366">2</div><div><div class="ct2" style="color:#003366">Competitor Acumen</div><div class="cd2">How accurately a firm comprehends a rival's prioritization. Predicts market share gains.</div><div style="font-size:7px;color:#BCBCBC;font-style:italic;margin-top:2px">Tsai, Su & Chen, 2011</div></div></div>
+        <div class="cd" style="border-color:#B22028"><div class="cn" style="background:#B22028">3</div><div><div class="ct2" style="color:#B22028">Time-Based Competition</div><div class="cd2">Neither CD nor RBV addresses how firms build resources for future markets. CI bridges this.</div><div style="font-size:7px;color:#BCBCBC;font-style:italic;margin-top:2px">Chen, Michel & Lin, 2021</div></div></div>
       </div>
-      <div class="col" style="flex:0.95">
+      <div style="flex:0.95">
         <div class="sh" style="color:#003366">FROM CD TO CI: THE BEHAVIORAL BRIDGE</div>
-        <div><div class="amc-h" style="background:#003366">AWARENESS</div><div class="amc-b">What the CI system surfaces — expanded competitive landscape through AI scanning.</div></div>
-        <div class="amc-arr">▼</div>
-        <div><div class="amc-h" style="background:#4A7FB5">MOTIVATION</div><div class="amc-b">Strategic context that determines relevance — why intelligence matters now.</div></div>
-        <div class="amc-arr">▼</div>
-        <div><div class="amc-h" style="background:#4A6E8C">CAPABILITY</div><div class="amc-b">Organizational resources to act — the natural bridge to RBV.</div></div>
+        <div><div class="ah" style="background:#003366">AWARENESS</div><div class="ab">What the CI system surfaces — expanded competitive landscape through AI scanning. Does the firm recognize the competitive relationship?</div></div>
+        <div class="aa">▼</div>
+        <div><div class="ah" style="background:#4A7FB5">MOTIVATION</div><div class="ab">Strategic context that determines relevance — why intelligence matters for this firm now. Is there sufficient incentive to act?</div></div>
+        <div class="aa">▼</div>
+        <div><div class="ah" style="background:#4A6E8C">CAPABILITY</div><div class="ab">Organizational resources to act — does the firm have the capacity to respond? This is the natural bridge to RBV.</div></div>
         <div style="margin-top:10px;text-align:center"><p style="font-size:9px;color:#8C8C8C;font-style:italic;line-height:1.4">"Isolated consideration of either CD or the RBV gives an incomplete picture of the firm."<br><span style="font-size:7.5px">— Chen, Michel & Lin, 2021</span></p></div>
       </div>
     </div>
   </div>
 </div>
 
-<!-- SLIDE 3: S9 Chen 1996 -->
+<!-- ═══════ SLIDE 3: S9 Chen 1996 ═══════ -->
 <div class="slide" id="s2">
-  <div class="chrome-bar"></div><div class="chrome-line"></div>
-  <div class="chrome-conf">CONFIDENTIAL</div><div class="chrome-pg">9</div>
-  <div class="chrome-src">Source: Chen, M.-J. (1996). Competitor Analysis and Interfirm Rivalry. Academy of Management Review, 21(1), 100–134</div>
-  <div class="s-title">Awareness, motivation, and capability drive competitive behavior — and define what CI must capture</div>
-  <div class="s-body">
-    <div class="tags"><span class="tag tag-b" style="background:#003366">COMPETITOR ANALYSIS & DYNAMICS</span><span class="tag tag-m">THEORETICAL FRAMEWORK</span></div>
-    <div class="two-col">
-      <div class="col" style="flex:1.3">
+  <div class="cb"></div><div class="cl"></div><div class="cc">CONFIDENTIAL</div><div class="cp">9</div>
+  <div class="cs">Source: Chen, M.-J. (1996). Competitor Analysis and Interfirm Rivalry. Academy of Management Review, 21(1), 100–134</div>
+  <div class="st">Awareness, motivation, and capability drive competitive behavior — and define what CI must capture</div>
+  <div class="sb">
+    <div class="tags"><span class="tg tgb" style="background:#003366">COMPETITOR ANALYSIS & DYNAMICS</span><span class="tg tgm">THEORETICAL FRAMEWORK</span></div>
+    <div class="tc">
+      <div style="flex:1.3">
         <div class="sh" style="color:#003366">CORE CONTRIBUTION</div>
-        <p class="bt">Integrates competitor analysis (market commonality + resource similarity) with interfirm rivalry through AMC. First attempt to bridge prebattle competitive relationship with prediction of rivalrous behavior.</p>
+        <p class="bt">Integrates competitor analysis (market commonality + resource similarity) with interfirm rivalry through AMC. First attempt to bridge the prebattle competitive relationship with prediction of rivalrous behavior.</p>
         <div class="sh" style="color:#003366">KEY INSIGHTS</div>
         <div class="bl"><div><span>• Market commonality and resource similarity shape tension — behavior depends on awareness, motivation, capability</span></div><div><span>• Competition is multi-level: global (firm level) and focal (specific market)</span></div><div><span>• Competitive asymmetry: rivals don't pose equal threats to each other</span></div></div>
-        <div class="gap" style="border-color:#003366"><div class="diamond" style="background:#003366"></div><div class="gt"><span class="gl" style="color:#003366">Research gap</span>  Framework is static — how AMC drivers evolve dynamically remains unexplored.</div></div>
+        <div class="gap" style="border-color:#003366"><div class="dm" style="background:#003366"></div><div class="gt"><span class="gl" style="color:#003366">Research gap</span>  Framework is static — how AMC drivers evolve dynamically remains unexplored.</div></div>
         <div class="qb" style="border-color:#003366"><p>"The joint consideration of market commonality and resource similarity shows the complementarity of two prominent but contrasting strategy theories."</p></div>
         <div class="sh" style="color:#003366">APPLICATION TO THESIS</div>
         <p class="bt">AMC drivers map to what AI-driven CI must capture: awareness, motivation, capability. Lens for survey/interview design.</p>
       </div>
-      <div class="col" style="flex:0.7">
-        <div class="ph" style="height:200px">Figure 2: Market commonality ×
+      <div style="flex:0.7"><div class="ph" style="height:200px">Figure 2: Market commonality ×
 resource similarity → AMC
-behavioral drivers → action outcomes</div>
-      </div>
+behavioral drivers → action outcomes</div></div>
     </div>
   </div>
 </div>
 
-<!-- SLIDE 4: S10 Gur 2019 -->
+<!-- ═══════ SLIDE 4: S10 Gur 2019 ═══════ -->
 <div class="slide" id="s3">
-  <div class="chrome-bar"></div><div class="chrome-line"></div>
-  <div class="chrome-conf">CONFIDENTIAL</div><div class="chrome-pg">10</div>
-  <div class="chrome-src">Source: Gur, F.A. & Greckhamer, T. (2019). Know Thy Enemy. Journal of Management, 45(5), 2072–2100</div>
-  <div class="s-title">How firms learn to identify competitors remains an open question — a direct fit for our research</div>
-  <div class="s-body">
-    <div class="tags"><span class="tag tag-b" style="background:#003366">COMPETITOR ANALYSIS & DYNAMICS</span><span class="tag tag-m">SYSTEMATIC LIT REVIEW</span></div>
-    <div class="two-col">
-      <div class="col" style="flex:1.3">
+  <div class="cb"></div><div class="cl"></div><div class="cc">CONFIDENTIAL</div><div class="cp">10</div>
+  <div class="cs">Source: Gur, F.A. & Greckhamer, T. (2019). Know Thy Enemy. Journal of Management, 45(5), 2072–2100</div>
+  <div class="st">How firms learn to identify competitors remains an open question — a direct fit for our research</div>
+  <div class="sb">
+    <div class="tags"><span class="tg tgb" style="background:#003366">COMPETITOR ANALYSIS & DYNAMICS</span><span class="tg tgm">SYSTEMATIC LIT REVIEW</span></div>
+    <div class="tc">
+      <div style="flex:1.3">
         <div class="sh" style="color:#003366">CORE CONTRIBUTION</div>
         <p class="bt">Organizes competitor identification into four perspectives. Proposes six future research themes across dynamics, interorganizational relations, micro-foundations, practice/process, international, and entrepreneurial dimensions.</p>
         <div class="sh" style="color:#003366">KEY FUTURE RESEARCH QUESTIONS (from 6 themes)</div>
         <div class="bl"><div><span>• Theme 4 — How do firms learn to identify competitors? What routines do they develop?</span></div><div><span>• Theme 1 — How do managers' cognitive maps change as environments change?</span></div><div><span>• Theme 3 — How do individual managerial attributes affect competitor identification?</span></div><div><span>• Theme 5 — How do MNCs distribute competitor identification between HQ and subsidiaries?</span></div></div>
-        <div class="gap" style="border-color:#003366"><div class="diamond" style="background:#003366"></div><div class="gt"><span class="gl" style="color:#003366">Research gap</span>  Managers' competitive blind spots and technology-driven shifts in competitive boundaries are underexplored.</div></div>
+        <div class="gap" style="border-color:#003366"><div class="dm" style="background:#003366"></div><div class="gt"><span class="gl" style="color:#003366">Research gap</span>  Managers' competitive blind spots and technology-driven shifts in competitive boundaries are underexplored.</div></div>
         <div class="qb" style="border-color:#003366"><p>"How do firms learn to identify their competitors, and what kinds of routines do they develop for this purpose?"</p></div>
         <div class="sh" style="color:#003366">APPLICATION TO THESIS</div>
         <p class="bt">The "how firms learn" question is our research territory — with AI as the mechanism.</p>
       </div>
-      <div class="col" style="flex:0.7"><div class="ph" style="height:200px">Figure: Four perspectives on
+      <div style="flex:0.7"><div class="ph" style="height:200px">Figure: Four perspectives on
 competitor identification</div></div>
     </div>
   </div>
 </div>
 
-<!-- SLIDE 5: S11 Tsai 2011 (two-col) -->
+<!-- ═══════ SLIDE 5: S11 Tsai 2011 ═══════ -->
 <div class="slide" id="s4">
-  <div class="chrome-bar"></div><div class="chrome-line"></div>
-  <div class="chrome-conf">CONFIDENTIAL</div><div class="chrome-pg">11</div>
-  <div class="chrome-src">Source: Tsai, W.; Su, K.-H. & Chen, M.-J. (2011). Seeing Through the Eyes of a Rival. AMJ, 54(4), 761–778</div>
-  <div class="s-title">Competitor acumen — how accurately you read rivals' priorities — predicts market share gains</div>
-  <div class="s-body">
-    <div class="tags"><span class="tag tag-b" style="background:#003366">COMPETITOR ANALYSIS & DYNAMICS</span><span class="tag tag-m">EMPIRICAL — QUANTITATIVE</span></div>
-    <div class="two-col">
-      <div class="col">
+  <div class="cb"></div><div class="cl"></div><div class="cc">CONFIDENTIAL</div><div class="cp">11</div>
+  <div class="cs">Source: Tsai, W.; Su, K.-H. & Chen, M.-J. (2011). Seeing Through the Eyes of a Rival. AMJ, 54(4), 761–778</div>
+  <div class="st">Competitor acumen — how accurately you read rivals' priorities — predicts market share gains</div>
+  <div class="sb">
+    <div class="tags"><span class="tg tgb" style="background:#003366">COMPETITOR ANALYSIS & DYNAMICS</span><span class="tg tgm">EMPIRICAL — QUANTITATIVE</span></div>
+    <div class="tc">
+      <div style="flex:1">
         <div class="sh" style="color:#003366">CORE CONTRIBUTION</div>
         <p class="bt">Introduces competitor acumen: the extent to which a focal firm's assessment of a rival's prioritization of competitors reflects the rival's own view.</p>
         <div class="sh" style="color:#003366">KEY INSIGHTS</div>
         <div class="bl"><div><span>• A firm's prioritization reflects underlying strategic thinking with resource allocation implications</span></div><div><span>• Competitor acumen shaped by relational and structural competitive embeddedness</span></div><div><span>• High acumen + high resource deployment = greatest market share gains</span></div><div><span>• "Competitor acumen is even more important in today's dynamic environment"</span></div></div>
         <div class="qb" style="border-color:#003366"><p>"Competitor acumen: the extent to which a focal firm's assessment of a given rival's prioritization of competitors reflects the rival's own view."</p></div>
       </div>
-      <div class="col">
-        <div class="gap" style="border-color:#003366"><div class="diamond" style="background:#003366"></div><div class="gt"><span class="gl" style="color:#003366">Research gap</span>  Single point in time, U.S. airlines only. Authors call for "longitudinal database" and "dynamic model of competitor acumen."</div></div>
+      <div style="flex:1">
+        <div class="gap" style="border-color:#003366"><div class="dm" style="background:#003366"></div><div class="gt"><span class="gl" style="color:#003366">Research gap</span>  Single point in time, U.S. airlines only. Authors call for "longitudinal database" and "dynamic model of competitor acumen."</div></div>
         <div class="sh" style="color:#003366">APPLICATION TO THESIS</div>
         <p class="bt">Measurable construct for interviews/surveys. AI-driven CI should increase competitor acumen — a potential DV or mediating construct.</p>
       </div>
@@ -192,75 +233,72 @@ competitor identification</div></div>
   </div>
 </div>
 
-<!-- SLIDE 6: S12 Ghoshal 1991 -->
+<!-- ═══════ SLIDE 6: S12 Ghoshal 1991 ═══════ -->
 <div class="slide" id="s5">
-  <div class="chrome-bar"></div><div class="chrome-line"></div>
-  <div class="chrome-conf">CONFIDENTIAL</div><div class="chrome-pg">12</div>
-  <div class="chrome-src">Source: Ghoshal, S. & Westney, D.E. (1991). Organizing Competitor Analysis Systems. SMJ, 12(1), 17–31</div>
-  <div class="s-title">The CA function's core tension: too much time on data, not enough on analysis that drives action</div>
-  <div class="s-body">
-    <div class="tags"><span class="tag tag-b" style="background:#4A7FB5">CI PROCESS & ORGANIZATION</span><span class="tag tag-m">SURVEY + CASE STUDY (3 MNCs)</span></div>
-    <div class="two-col">
-      <div class="col" style="flex:1.3">
+  <div class="cb"></div><div class="cl"></div><div class="cc">CONFIDENTIAL</div><div class="cp">12</div>
+  <div class="cs">Source: Ghoshal, S. & Westney, D.E. (1991). Organizing Competitor Analysis Systems. SMJ, 12(1), 17–31</div>
+  <div class="st">The CA function's core tension: too much time on data, not enough on analysis that drives action</div>
+  <div class="sb">
+    <div class="tags"><span class="tg tgb" style="background:#4A7FB5">CI PROCESS & ORGANIZATION</span><span class="tg tgm">SURVEY + CASE STUDY (3 MNCs)</span></div>
+    <div class="tc">
+      <div style="flex:1.3">
         <div class="sh" style="color:#4A7FB5">CORE CONTRIBUTION</div>
         <p class="bt">First detailed empirical study of how firms organize the CA function. Identifies impediments across three clusters: data management, analysis, and implication.</p>
         <div class="sh" style="color:#4A7FB5">KEY INSIGHTS</div>
         <div class="bl"><div><span>• CA as change agent — top management supported it to make the corporation more responsive</span></div><div><span>• Six uses of CI: sensitization, benchmarking, legitimation, inspiration, planning, decision-making</span></div><div><span>• Analysts frustrated spending most time on data management</span></div><div><span>• "Managers need numbers they can move the organization with"</span></div></div>
-        <div class="gap" style="border-color:#4A7FB5"><div class="diamond" style="background:#4A7FB5"></div><div class="gt"><span class="gl" style="color:#4A7FB5">Research gap</span>  Distrust of CA methodologies goes beyond time misallocation. How to reorganize when technology automates data management?</div></div>
+        <div class="gap" style="border-color:#4A7FB5"><div class="dm" style="background:#4A7FB5"></div><div class="gt"><span class="gl" style="color:#4A7FB5">Research gap</span>  Distrust of CA methodologies goes beyond time misallocation. How to reorganize when technology automates data management?</div></div>
         <div class="qb" style="border-color:#4A7FB5"><p>"A system that would reduce the amount of time expended on data management would free up time for the analysis."</p></div>
         <div class="sh" style="color:#4A7FB5">APPLICATION TO THESIS</div>
         <p class="bt">Foundational for CI/CA organization. AI addresses the data management bottleneck.</p>
       </div>
-      <div class="col" style="flex:0.7"><div class="ph" style="height:200px">Table 1: Impediments by clients
+      <div style="flex:0.7"><div class="ph" style="height:200px">Table 1: Impediments by clients
 (n=63) and analysts (n=73)</div></div>
     </div>
   </div>
 </div>
 
-<!-- SLIDE 7: S13 Prescott 1987 -->
+<!-- ═══════ SLIDE 7: S13 Prescott 1987 ═══════ -->
 <div class="slide" id="s6">
-  <div class="chrome-bar"></div><div class="chrome-line"></div>
-  <div class="chrome-conf">CONFIDENTIAL</div><div class="chrome-pg">13</div>
-  <div class="chrome-src">Source: Prescott, J.E. & Smith, D.C. (1987). A Project-Based Approach to Competitive Analysis. SMJ, 8(5), 411–423</div>
-  <div class="s-title">Comprehensive CI systems fail at the point of action — project-based CA closes the gap</div>
-  <div class="s-body">
-    <div class="tags"><span class="tag tag-b" style="background:#4A7FB5">CI PROCESS & ORGANIZATION</span><span class="tag tag-m">FIELD RESEARCH (16 PROJECTS)</span></div>
-    <div class="two-col">
-      <div class="col" style="flex:1.3">
+  <div class="cb"></div><div class="cl"></div><div class="cc">CONFIDENTIAL</div><div class="cp">13</div>
+  <div class="cs">Source: Prescott, J.E. & Smith, D.C. (1987). A Project-Based Approach to Competitive Analysis. SMJ, 8(5), 411–423</div>
+  <div class="st">Comprehensive CI systems fail at the point of action — project-based CA closes the gap</div>
+  <div class="sb">
+    <div class="tags"><span class="tg tgb" style="background:#4A7FB5">CI PROCESS & ORGANIZATION</span><span class="tg tgm">FIELD RESEARCH (16 PROJECTS)</span></div>
+    <div class="tc">
+      <div style="flex:1.3">
         <div class="sh" style="color:#4A7FB5">CORE CONTRIBUTION</div>
         <p class="bt">Bridges comprehensive CI and informal procedures. Project-based framework across 15 dimensions focuses on specific decision requirements.</p>
         <div class="sh" style="color:#4A7FB5">KEY INSIGHTS</div>
         <div class="bl"><div><span>• Project-based CA produces highly relevant information for immediate decisions</span></div><div><span>• Framework: project definition → constraints → analysis tasks → recommendations (closed-loop)</span></div><div><span>• Key distinction across 15 dimensions: comprehensive = general; project-based = specific</span></div></div>
-        <div class="gap" style="border-color:#4A7FB5"><div class="diamond" style="background:#4A7FB5"></div><div class="gt"><span class="gl" style="color:#4A7FB5">Research gap</span>  Can technology bridge the comprehensive–project divide?</div></div>
+        <div class="gap" style="border-color:#4A7FB5"><div class="dm" style="background:#4A7FB5"></div><div class="gt"><span class="gl" style="color:#4A7FB5">Research gap</span>  Can technology bridge the comprehensive–project divide?</div></div>
         <div class="qb" style="border-color:#4A7FB5"><p>"The framework is driven by the competitive intelligence requirements of a specific project rather than the broad strategic thrust of the business."</p></div>
         <div class="sh" style="color:#4A7FB5">APPLICATION TO THESIS</div>
         <p class="bt">AI-driven CI could bridge both: always-on monitoring plus project-triggered deep dives.</p>
       </div>
-      <div class="col" style="flex:0.7"><div class="ph" style="height:200px">Figure 1: Project definition →
+      <div style="flex:0.7"><div class="ph" style="height:200px">Figure 1: Project definition →
 constraints → analysis tasks →
 recommendations</div></div>
     </div>
   </div>
 </div>
 
-<!-- SLIDE 8: S14 Hutzschenreuter (two-col) -->
+<!-- ═══════ SLIDE 8: S14 Hutzschenreuter ═══════ -->
 <div class="slide" id="s7">
-  <div class="chrome-bar"></div><div class="chrome-line"></div>
-  <div class="chrome-conf">CONFIDENTIAL</div><div class="chrome-pg">14</div>
-  <div class="chrome-src">Source: Hutzschenreuter, T. & Kleindienst, I. (2006). Strategy-Process Research. JOM, 32(5), 673–720</div>
-  <div class="s-title">Strategy implementation is the neglected half — linking formulation to outcomes is the frontier</div>
-  <div class="s-body">
-    <div class="tags"><span class="tag tag-b" style="background:#B22028">STRATEGY PROCESS</span><span class="tag tag-m">SYSTEMATIC LIT REVIEW (991)</span></div>
-    <div class="two-col">
-      <div class="col">
+  <div class="cb"></div><div class="cl"></div><div class="cc">CONFIDENTIAL</div><div class="cp">14</div>
+  <div class="cs">Source: Hutzschenreuter, T. & Kleindienst, I. (2006). Strategy-Process Research. JOM, 32(5), 673–720</div>
+  <div class="st">Strategy implementation is the neglected half — linking formulation to outcomes is the frontier</div>
+  <div class="sb">
+    <div class="tags"><span class="tg tgb" style="background:#B22028">STRATEGY PROCESS</span><span class="tg tgm">SYSTEMATIC LIT REVIEW (991)</span></div>
+    <div class="tc">
+      <div style="flex:1">
         <div class="sh" style="color:#B22028">CORE CONTRIBUTION</div>
         <p class="bt">Reviews 991 articles: antecedents → strategy process (formulation + implementation) → outcomes. Six perspectives identified.</p>
         <div class="sh" style="color:#B22028">KEY INSIGHTS</div>
         <div class="bl"><div><span>• Implementation skills can be learned; contingent on organizational dynamics</span></div><div><span>• Success depends on commitment, learning, and key-person involvement</span></div><div><span>• Strategists' cognitive models associated with outcomes</span></div><div><span>• "Implementing strategy means managing change. Change may hinder effectiveness"</span></div></div>
         <div class="qb" style="border-color:#B22028"><p>"Research on implementation is seen as inferior compared with formulation. This is incomprehensible because implementation is the most important challenge."</p></div>
       </div>
-      <div class="col">
-        <div class="gap" style="border-color:#B22028"><div class="diamond" style="background:#B22028"></div><div class="gt"><span class="gl" style="color:#B22028">Research gap</span>  (1) "Link implementation characteristics to outcomes." (2) "Establish a link between formulation and implementation." No implementation taxonomies after 991 articles.</div></div>
+      <div style="flex:1">
+        <div class="gap" style="border-color:#B22028"><div class="dm" style="background:#B22028"></div><div class="gt"><span class="gl" style="color:#B22028">Research gap</span>  (1) "Link implementation characteristics to outcomes." (2) "Establish a link between formulation and implementation." No implementation taxonomies after 991 articles.</div></div>
         <div class="sh" style="color:#B22028">APPLICATION TO THESIS</div>
         <p class="bt">Directly parallels our CIO framework (Capabilities → Implementation → Outcomes). Validates focus on implementation as the underexplored frontier.</p>
       </div>
@@ -268,36 +306,35 @@ recommendations</div></div>
   </div>
 </div>
 
-<!-- SLIDE 9: S15 Mintzberg -->
+<!-- ═══════ SLIDE 9: S15 Mintzberg ═══════ -->
 <div class="slide" id="s8">
-  <div class="chrome-bar"></div><div class="chrome-line"></div>
-  <div class="chrome-conf">CONFIDENTIAL</div><div class="chrome-pg">15</div>
-  <div class="chrome-src">Source: Mintzberg, H. & Waters, J.A. (1985). Of Strategies, Deliberate and Emergent. SMJ, 6(3), 257–272</div>
-  <div class="s-title">Strategy walks on two feet — deliberate and emergent — and AI may reshape the balance</div>
-  <div class="s-body">
-    <div class="tags"><span class="tag tag-b" style="background:#B22028">STRATEGY PROCESS</span><span class="tag tag-m">FOUNDATIONAL THEORY</span></div>
-    <div class="two-col">
-      <div class="col" style="flex:1.2">
+  <div class="cb"></div><div class="cl"></div><div class="cc">CONFIDENTIAL</div><div class="cp">15</div>
+  <div class="cs">Source: Mintzberg, H. & Waters, J.A. (1985). Of Strategies, Deliberate and Emergent. SMJ, 6(3), 257–272</div>
+  <div class="st">Strategy walks on two feet — deliberate and emergent — and AI may reshape the balance</div>
+  <div class="sb">
+    <div class="tags"><span class="tg tgb" style="background:#B22028">STRATEGY PROCESS</span><span class="tg tgm">FOUNDATIONAL THEORY</span></div>
+    <div class="tc">
+      <div style="flex:1.2">
         <div class="sh" style="color:#B22028">CORE CONTRIBUTION</div>
         <p class="bt">Distinguishes deliberate strategy (intended and realized) from emergent strategy (patterns without intention). Eight types along the continuum.</p>
         <div class="sh" style="color:#B22028">KEY INSIGHTS</div>
         <div class="bl"><div><span>• Emergent strategy = "strategic learning" — responding to evolving reality</span></div><div><span>• Pattern recognition is crucial to effective managers</span></div><div><span>• "Umbrella strategy" maps to AI-driven CI — leaders set boundaries, details emerge</span></div></div>
-        <div class="gap" style="border-color:#B22028"><div class="diamond" style="background:#B22028"></div><div class="gt"><span class="gl" style="color:#B22028">Research gap</span>  Strategies more deliberate in centrally controlled orgs; more emergent in decentralized — does AI centralize or decentralize this?</div></div>
+        <div class="gap" style="border-color:#B22028"><div class="dm" style="background:#B22028"></div><div class="gt"><span class="gl" style="color:#B22028">Research gap</span>  Strategies more deliberate in centrally controlled orgs; more emergent in decentralized — does AI centralize or decentralize this?</div></div>
         <div class="qb" style="border-color:#B22028"><p>"Our conclusion is that strategy formation walks on two feet, one deliberate, the other emergent."</p></div>
         <div class="sh" style="color:#B22028">APPLICATION TO THESIS</div>
         <p class="bt">AI excels at pattern recognition — does it make emergent strategies more visible and deliberately manageable?</p>
       </div>
-      <div class="col" style="flex:0.8">
+      <div style="flex:0.8">
         <div class="sh" style="color:#B22028">EIGHT STRATEGY TYPES</div>
-        <div class="strat-grid">
-          <div class="strat-item"><div class="strat-bar" style="background:#003366"></div><div><div class="strat-n" style="color:#003366">Planned</div><div class="strat-d">Precise intentions, centrally controlled</div></div></div>
-          <div class="strat-item"><div class="strat-bar" style="background:#7A5E6E"></div><div><div class="strat-n" style="color:#7A5E6E">Process</div><div class="strat-d">Leaders control process, content emerges</div></div></div>
-          <div class="strat-item"><div class="strat-bar" style="background:#0D477A"></div><div><div class="strat-n" style="color:#0D477A">Entrepreneurial</div><div class="strat-d">One leader's vision</div></div></div>
-          <div class="strat-item"><div class="strat-bar" style="background:#8C4A50"></div><div><div class="strat-n" style="color:#8C4A50">Unconnected</div><div class="strat-d">Subunits produce patterns independently</div></div></div>
-          <div class="strat-item"><div class="strat-bar" style="background:#1A5B8E"></div><div><div class="strat-n" style="color:#1A5B8E">Ideological</div><div class="strat-d">Collective vision, shared beliefs</div></div></div>
-          <div class="strat-item"><div class="strat-bar" style="background:#9E3538"></div><div><div class="strat-n" style="color:#9E3538">Consensus</div><div class="strat-d">Actors converge without central direction</div></div></div>
-          <div class="strat-item"><div class="strat-bar" style="background:#4A6E8C"></div><div><div class="strat-n" style="color:#4A6E8C">Umbrella</div><div class="strat-d">Leaders set boundaries, details emerge</div></div></div>
-          <div class="strat-item"><div class="strat-bar" style="background:#B22028"></div><div><div class="strat-n" style="color:#B22028">Imposed</div><div class="strat-d">Environment dictates action patterns</div></div></div>
+        <div class="sg">
+          <div class="si"><div class="sbr" style="background:#003366"></div><div><div class="sn" style="color:#003366">Planned</div><div class="sd">Precise intentions, centrally controlled</div></div></div>
+          <div class="si"><div class="sbr" style="background:#7A5E6E"></div><div><div class="sn" style="color:#7A5E6E">Process</div><div class="sd">Leaders control process, content emerges</div></div></div>
+          <div class="si"><div class="sbr" style="background:#0D477A"></div><div><div class="sn" style="color:#0D477A">Entrepreneurial</div><div class="sd">One leader's vision</div></div></div>
+          <div class="si"><div class="sbr" style="background:#8C4A50"></div><div><div class="sn" style="color:#8C4A50">Unconnected</div><div class="sd">Subunits produce patterns independently</div></div></div>
+          <div class="si"><div class="sbr" style="background:#1A5B8E"></div><div><div class="sn" style="color:#1A5B8E">Ideological</div><div class="sd">Collective vision, shared beliefs</div></div></div>
+          <div class="si"><div class="sbr" style="background:#9E3538"></div><div><div class="sn" style="color:#9E3538">Consensus</div><div class="sd">Actors converge without direction</div></div></div>
+          <div class="si"><div class="sbr" style="background:#4A6E8C"></div><div><div class="sn" style="color:#4A6E8C">Umbrella</div><div class="sd">Leaders set boundaries, details emerge</div></div></div>
+          <div class="si"><div class="sbr" style="background:#B22028"></div><div><div class="sn" style="color:#B22028">Imposed</div><div class="sd">Environment dictates patterns</div></div></div>
         </div>
         <div style="display:flex;justify-content:space-between;font-size:7px;font-weight:700;margin-bottom:8px"><span style="color:#003366">← DELIBERATE</span><span style="color:#B22028">EMERGENT →</span></div>
         <div class="ph" style="height:110px">Figure 1: Intended → Deliberate → Realized
@@ -307,52 +344,43 @@ strategy (with unrealized + emergent paths)</div>
   </div>
 </div>
 
-<!-- SLIDE 10: S16 Chen 2021 -->
+<!-- ═══════ SLIDE 10: S16 Chen 2021 ═══════ -->
 <div class="slide" id="s9">
-  <div class="chrome-bar"></div><div class="chrome-line"></div>
-  <div class="chrome-conf">CONFIDENTIAL</div><div class="chrome-pg">16</div>
-  <div class="chrome-src">Source: Chen, M.-J.; Michel, J.G. & Lin, W. (2021). Worlds Apart? JOM, 47(7), 1820–1840</div>
-  <div class="s-title">Neither CD nor RBV addresses time-based competition for future markets — combining them could</div>
-  <div class="s-body">
-    <div class="tags"><span class="tag tag-b" style="background:#8C8C8C">CD + RBV INTEGRATION</span><span class="tag tag-m">INTEGRATIVE REVIEW</span></div>
-    <div class="two-col">
-      <div class="col" style="flex:1.1">
+  <div class="cb"></div><div class="cl"></div><div class="cc">CONFIDENTIAL</div><div class="cp">16</div>
+  <div class="cs">Source: Chen, M.-J.; Michel, J.G. & Lin, W. (2021). Worlds Apart? JOM, 47(7), 1820–1840</div>
+  <div class="st">Neither CD nor RBV addresses time-based competition for future markets — combining them could</div>
+  <div class="sb">
+    <div class="tags"><span class="tg tgb" style="background:#8C8C8C">CD + RBV INTEGRATION</span><span class="tg tgm">INTEGRATIVE REVIEW</span></div>
+    <div class="tc">
+      <div style="flex:1.1">
         <div class="sh" style="color:#8C8C8C">CORE CONTRIBUTION</div>
         <p class="bt">Bridges CD (external, transitory advantage) and RBV (internal, sustainable advantage). AMC is a natural bridge.</p>
         <div class="sh" style="color:#8C8C8C">KEY INSIGHTS</div>
-        <div class="bl"><div><span>• CEO temporal focus associated with competitive aggressiveness</span></div><div><span>• CD has neglected factor markets — a blind spot for pharma</span></div><div><span>• Both CD and RBV jointly illuminate future-oriented strategic positions</span></div></div>
-        <div class="gap" style="border-color:#8C8C8C"><div class="diamond" style="background:#8C8C8C"></div><div class="gt"><span class="gl" style="color:#8C8C8C">Research gap</span>  "Neither CD nor RBV has adequately embraced time-based actions that focus on building future competitiveness."</div></div>
+        <div class="bl"><div><span>• CEO temporal focus associated with competitive aggressiveness</span></div><div><span>• CD has neglected factor markets — a blind spot for pharma</span></div><div><span>• Both CD and RBV jointly illuminate future-oriented positions</span></div></div>
+        <div class="gap" style="border-color:#8C8C8C"><div class="dm" style="background:#8C8C8C"></div><div class="gt"><span class="gl" style="color:#8C8C8C">Research gap</span>  "Neither CD nor RBV has adequately embraced time-based actions that focus on building future competitiveness."</div></div>
         <div class="qb" style="border-color:#8C8C8C"><p>"The timing and urgency and the longevity of resource decisions are central to strategic management."</p></div>
         <div class="sh" style="color:#8C8C8C">APPLICATION TO THESIS</div>
         <p class="bt">Combining capabilities (RBV/Verona) with competitive dynamics through CI. What capabilities must be built today?</p>
       </div>
-      <div class="col" style="flex:0.9">
+      <div style="flex:0.9">
         <div class="sh" style="color:#8C8C8C">FIVE FUTURE RESEARCH DIRECTIONS</div>
-        <div class="card" style="border-color:#003366"><div class="card-num" style="background:#003366">1</div><div><div class="card-t" style="color:#003366">Motivational Concerns</div><div class="card-d">Resource portfolios motivate competitive behaviors beyond market overlap</div></div></div>
-        <div class="card" style="border-color:#4A7FB5"><div class="card-num" style="background:#4A7FB5">2</div><div><div class="card-t" style="color:#4A7FB5">Nonmarket Strategy</div><div class="card-d">Social, political, legal arrangements structure interactions outside markets</div></div></div>
-        <div class="card" style="border-color:#2D7D4F"><div class="card-num" style="background:#2D7D4F">3</div><div><div class="card-t" style="color:#2D7D4F">Factor Markets</div><div class="card-d">CD in upstream resources — contestants beyond "the usual suspects"</div></div></div>
-        <div class="card" style="border-color:#B22028;border-left-width:5px"><div class="card-num" style="background:#B22028">4</div><div><div class="card-t" style="color:#B22028;font-size:10px">Time-Based Competition ★</div><div class="card-d">Juxtaposes CD temporary advantage with RBV durable advantage</div></div></div>
-        <div class="card" style="border-color:#7030A0"><div class="card-num" style="background:#7030A0">5</div><div><div class="card-t" style="color:#7030A0">Multilateral Interaction</div><div class="card-d">Competition increasingly group vs. group, platform vs. platform</div></div></div>
+        <div class="cd" style="border-color:#003366"><div class="cn" style="background:#003366">1</div><div><div class="ct2" style="color:#003366">Motivational Concerns</div><div class="cd2">Resource portfolios motivate competitive behaviors beyond market overlap</div></div></div>
+        <div class="cd" style="border-color:#4A7FB5"><div class="cn" style="background:#4A7FB5">2</div><div><div class="ct2" style="color:#4A7FB5">Nonmarket Strategy</div><div class="cd2">Social, political, legal arrangements structure interactions outside markets</div></div></div>
+        <div class="cd" style="border-color:#2D7D4F"><div class="cn" style="background:#2D7D4F">3</div><div><div class="ct2" style="color:#2D7D4F">Factor Markets</div><div class="cd2">CD in upstream resources — contestants beyond "the usual suspects"</div></div></div>
+        <div class="cd" style="border-color:#B22028;border-left-width:5px"><div class="cn" style="background:#B22028">4</div><div><div class="ct2" style="color:#B22028;font-size:10px">Time-Based Competition ★</div><div class="cd2">Juxtaposes CD temporary advantage with RBV durable advantage</div></div></div>
+        <div class="cd" style="border-color:#7030A0"><div class="cn" style="background:#7030A0">5</div><div><div class="ct2" style="color:#7030A0">Multilateral Interaction</div><div class="cd2">Competition increasingly group vs. group, platform vs. platform</div></div></div>
       </div>
     </div>
   </div>
 </div>
 
 <script>
-const labels=["S2: RBV (Updated)","S8: CD Synthesis (New)","S9: Chen 1996","S10: Gur 2019","S11: Tsai 2011","S12: Ghoshal 1991","S13: Prescott 1987","S14: Hutzschenreuter","S15: Mintzberg","S16: Chen 2021"];
+const labels=["S2: RBV (Updated)","S8: CD Synthesis","S9: Chen 1996","S10: Gur 2019","S11: Tsai 2011","S12: Ghoshal 1991","S13: Prescott 1987","S14: Hutzschenreuter","S15: Mintzberg","S16: Chen 2021"];
 let cur=0;const total=10;
-function show(){
-  for(let i=0;i<total;i++)document.getElementById('s'+i).className=i===cur?'slide visible':'slide';
-  document.getElementById('counter').textContent='Slide '+(cur+1)+' / '+total;
-  document.getElementById('prev').disabled=cur===0;
-  document.getElementById('next').disabled=cur===total-1;
-  document.querySelectorAll('.pills button').forEach((b,i)=>{b.className=i===cur?'active':''});
-}
+function show(){for(let i=0;i<total;i++)document.getElementById('s'+i).className=i===cur?'slide visible':'slide';document.getElementById('counter').textContent='Slide '+(cur+1)+' / '+total;document.getElementById('prev').disabled=cur===0;document.getElementById('next').disabled=cur===total-1;document.querySelectorAll('.pills button').forEach((b,i)=>{b.className=i===cur?'active':''});}
 function go(d){cur=Math.max(0,Math.min(total-1,cur+d));show();}
 function jump(i){cur=i;show();}
-// Build pills
-const pp=document.getElementById('pills');
-labels.forEach((l,i)=>{const b=document.createElement('button');b.textContent=l;b.onclick=()=>jump(i);pp.appendChild(b);});
-show();
+const pp=document.getElementById('pills');labels.forEach((l,i)=>{const b=document.createElement('button');b.textContent=l;b.onclick=()=>jump(i);pp.appendChild(b);});show();
+document.addEventListener('keydown',e=>{if(e.key==='ArrowRight')go(1);if(e.key==='ArrowLeft')go(-1);});
 </script>
 </body></html>
